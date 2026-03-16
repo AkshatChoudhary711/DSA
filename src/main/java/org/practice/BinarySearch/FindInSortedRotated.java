@@ -1,4 +1,4 @@
-package org.practice;
+package org.practice.BinarySearch;
 
 public class FindInSortedRotated {
     public static int findInSortedRotated(int arr[], int element){
@@ -11,7 +11,7 @@ public class FindInSortedRotated {
     }
 
     public static void main(String[] args) {
-        int arr[] = {1,5,6};
+        int arr[] = {1};
         System.out.println(FindInSortedRotated.findInSortedRotated(arr,2));
     }
 }

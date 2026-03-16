@@ -1,4 +1,4 @@
-package org.practice;
+package org.practice.BinarySearch;
 
 public class OccurenceInSorted {
     public static int occurenceInSorted(int arr[], int element){

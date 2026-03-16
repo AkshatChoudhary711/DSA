@@ -1,4 +1,4 @@
-package org.practice;
+package org.practice.BinarySearch;
 
 public class DscBinarySearch {
     public static int dscBinarySearch(int arr[], int element){

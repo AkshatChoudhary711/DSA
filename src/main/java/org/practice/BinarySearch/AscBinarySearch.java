@@ -1,4 +1,4 @@
-package org.practice;
+package org.practice.BinarySearch;
 
 public class AscBinarySearch {
     public static int ascBinarySearch(int arr[], int element){
@@ -26,7 +26,7 @@ public class AscBinarySearch {
     }
 
     public static void main(String[] args) {
-        int arr [] = {1};
-        System.out.println(AscBinarySearch.ascBinarySearch(arr,1));
+        int arr [] = {3,1};
+        System.out.println(AscBinarySearch.ascBinarySearch(arr,0,0,3));
     }
 }

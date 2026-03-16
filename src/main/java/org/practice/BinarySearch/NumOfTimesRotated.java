@@ -1,4 +1,4 @@
-package org.practice;
+package org.practice.BinarySearch;
 
 public class NumOfTimesRotated {
     public static int numOfTimesRotated(int arr[]){
@@ -6,16 +6,18 @@ public class NumOfTimesRotated {
         int end = arr.length-1;
         while(start<= end) {
             int mid = start + ((end - start) / 2);
-            if (arr[mid] < arr[(mid + 1) % arr.length] && arr[mid] < arr[(mid + arr.length - 1) % arr.length])
+            int left = (mid + 1 )%arr.length;
+            int right = (mid +arr.length- 1 )%arr.length;
+            if (arr[mid] < arr[left] && arr[mid] < arr[right])
                 return mid;
-            else if (arr[start] > arr[mid-1]) end = mid;
-            else start = mid;
+            else if (arr[0] <= arr[mid]) start = mid+1;
+            else end = mid-1;
         }
         return 0;
     }
 
     public static void main(String[] args) {
-        int arr[] = {11,12,15,18,2,5,6,8};
+        int arr[] = {11,13,15,17};
         System.out.println(NumOfTimesRotated.numOfTimesRotated(arr));
     }
 }

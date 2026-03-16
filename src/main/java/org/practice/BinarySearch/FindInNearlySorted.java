@@ -1,4 +1,4 @@
-package org.practice;
+package org.practice.BinarySearch;
 
 public class FindInNearlySorted {
     public static int findInNearlySorted(int arr[], int element){
